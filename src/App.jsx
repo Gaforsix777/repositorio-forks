@@ -50,8 +50,9 @@ function App() {
       setRegMensaje('⚠️ Todos los campos son obligatorios.')
       return
     }
-    if (regPassword.length < 6) {
-      setRegMensaje('⚠️ La contraseña debe tener al menos 6 caracteres.')
+    // Cambiar por:
+    if (regPassword.length < 5) {
+    setRegMensaje('Jose Reg: Contraseña muy corta (mínimo 5).')
       return
     }
     setRegMensaje(`✅ Usuario "${regNombre}" registrado correctamente.`)
@@ -217,9 +218,7 @@ function App() {
                   onChange={(e) => setRegPassword(e.target.value)}
                 />
               </div>
-              <button className="btn-primario" type="submit">
-                Registrarse
-              </button>
+              <button className="btn-primario" type="submit">Registrar nuevo usuario</button>
             </form>
             {regMensaje && (
               <p className="mensaje-feedback">{regMensaje}</p>
