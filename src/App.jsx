@@ -321,7 +321,7 @@ function App() {
           <div className="footer-estado">
             <span className={`estado-indicador estado-small ${sistemaActivo ? 'activo' : 'inactivo'}`} />
             <span className="footer-version">
-              Estado: {sistemaActivo ? 'Operativo' : 'Inactivo'} · v1.0.0
+              Estado: {sistemaActivo ? 'Operativo' : 'Inactivo'} · v1.0.1-patch
             </span>
           </div>
         </div>
